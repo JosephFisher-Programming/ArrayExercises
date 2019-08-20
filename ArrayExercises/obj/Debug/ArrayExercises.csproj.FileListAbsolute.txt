@@ -1,0 +1,7 @@
+C:\Users\s199027\source\repos\GitHubUploading\ArrayExercises\ArrayExercises\obj\Debug\ArrayExercises.csproj.CoreCompileInputs.cache
+C:\Users\s199027\source\repos\GitHubUploading\ArrayExercises\ArrayExercises\bin\Debug\ArrayExercises.exe.config
+C:\Users\s199027\source\repos\GitHubUploading\ArrayExercises\ArrayExercises\bin\Debug\ArrayExercises.exe
+C:\Users\s199027\source\repos\GitHubUploading\ArrayExercises\ArrayExercises\bin\Debug\ArrayExercises.pdb
+C:\Users\s199027\source\repos\GitHubUploading\ArrayExercises\ArrayExercises\obj\Debug\ArrayExercises.exe
+C:\Users\s199027\source\repos\GitHubUploading\ArrayExercises\ArrayExercises\obj\Debug\ArrayExercises.pdb
+C:\Users\s199027\source\repos\GitHubUploading\ArrayExercises\ArrayExercises\obj\Debug\ArrayExercises.csprojAssemblyReference.cache
