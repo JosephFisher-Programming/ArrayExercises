@@ -11,6 +11,7 @@ namespace ArrayExercises
 
         static void Main(string[] args)
         {
+            UniqueArray uni = new UniqueArray();
             string Ask(string _val)
             {
                 Console.WriteLine(_val);
@@ -133,12 +134,11 @@ namespace ArrayExercises
                 }
             }*/
 
-            /*string[] dragonNames = new string[3] { "Biggie", "Smallie", "Average" };
+            string[] dragonNames = new string[3] { "Biggie", "Smallie", "Average" };
             string[] dayNames = new string[7] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
             string exitCheck;
             int[,] dragonFood = new int[3, 7];
             int dragonType = 0;
-            int dragonEaten = 0;
             float foodEaten = 0;
             float[] foodTotal = new float[3] {0,0,0};
             int[] recordFoodDragon = new int[2];
@@ -152,17 +152,16 @@ namespace ArrayExercises
                 {
                     for (int values = 0; values < 7; values++)
                     {
-                        int.TryParse(Ask($"How much did {dragonNames[dragonType]} eat on {dayNames[values]}"), out dragonEaten);
-                        dragonFood[dragonType, values] = dragonEaten;
-                        foodEaten += dragonEaten;
-                        if (dragonEaten > recordFoodAmount[0])
+                        int.TryParse(Ask($"How much did {dragonNames[dragonType]} eat on {dayNames[values]}"), out dragonFood[dragonType, values]);
+                        foodEaten += dragonFood[dragonType, values];
+                        if (dragonFood[dragonType, values] > recordFoodAmount[0])
                         {
-                            recordFoodAmount[0] = dragonEaten;
+                            recordFoodAmount[0] = dragonFood[dragonType, values];
                             recordFoodDragon[0] = dragonType;
                         }
-                        if (dragonEaten < recordFoodAmount[1])
+                        if (dragonFood[dragonType, values] < recordFoodAmount[1])
                         {
-                            recordFoodAmount[1] = dragonEaten;
+                            recordFoodAmount[1] = dragonFood[dragonType, values];
                             recordFoodDragon[1] = dragonType;
                         }
                     }
@@ -181,11 +180,19 @@ namespace ArrayExercises
                     assign = 100;
                 }
             }
+            Console.WriteLine($"Here is a list of how much the dragons ate and who");
+            for (int i = 0; i < 7; i++)
+            {
+                Console.WriteLine($"{dragonNames[0]} ate {dragonFood[0,i]} on {dayNames[i]}\r\n{dragonNames[1]} ate {dragonFood[1, i]} on {dayNames[i]}\r\n{dragonNames[2]} ate {dragonFood[2, i]} on {dayNames[i]}");
+            }
+            Console.WriteLine("Press Enter in order to see the average and records!");
+            Console.ReadLine();
             Console.WriteLine($"{dragonNames[0]} ate a total of {foodTotal[0]}, {dragonNames[1]} ate a total of {foodTotal[1]}, and {dragonNames[2]} ate a total of {foodTotal[2]}");
-            Console.WriteLine($"{dragonNames[0]} {dragonNames[1] }{dragonNames[2]} ate a total of {foodTotal[0] + foodTotal[1] + foodTotal[2]}lbs! Thats an average of {(foodTotal[0] + foodTotal[1] + foodTotal[2])/7} a day!");
+            Console.WriteLine($"{dragonNames[0]} {dragonNames[1]} {dragonNames[2]} ate a total of {foodTotal[0] + foodTotal[1] + foodTotal[2]}lbs! Thats an average of {(foodTotal[0] + foodTotal[1] + foodTotal[2])/7} a day!");
             Console.WriteLine($"The dragon who ate the most food was {recordFoodDragon[0]} with a whopping {recordFoodAmount[0]}lbs!");
             Console.WriteLine($"The dragon who ate the least food was {recordFoodDragon[1]} with a measly {recordFoodAmount[0]}lbs!");
-            Console.ReadLine();*/
+            Console.ReadLine();
+            //uni.Unique();
         }
     }
 }
